@@ -1,0 +1,458 @@
+/**
+ *
+ * Domenomania.pl
+ * Client Panel
+ *
+*/
+
+body {
+	font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Login page */
+
+.login-page .login-header .description {
+	font-size: 15px;
+}
+
+.login-page .login-form .form-or {
+	border-top: 1px solid #444a53;
+	display: block;
+	margin-top: 42px;
+	margin-bottom: 0;
+}
+
+.login-page .login-form .form-or em {
+	background-color: #2f3541;
+	position: relative;
+	top: -9px;
+	padding: 12px;
+	border-radius: 20px;
+	border: 1px solid #444a53;
+}
+
+.login-page .login-form .link-password {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 550ms ease-in-out;
+  -moz-transition: all 550ms ease-in-out;
+  -o-transition: all 550ms ease-in-out;
+  transition: all 550ms ease-in-out;
+}
+
+.login-page .login-form .link-password:hover {
+  color: #ffffff;
+}
+
+.login-page .login-bottom-links .link {
+  font-size: 13px;
+}
+
+.login-page .login-form .alert-email a {
+	color: #2c7ea1;
+	-webkit-transition: all 550ms ease-in-out;
+	-moz-transition: all 550ms ease-in-out;
+	-o-transition: all 550ms ease-in-out;
+	transition: all 550ms ease-in-out;
+}
+
+.login-page .login-form .alert-email a:hover {
+	color: #215f79;
+}
+
+.navbar .navbar-inner {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.signin-page .remind-password {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.signin-page .form-or {
+	display: block;
+	margin-top: 42px;
+	margin-bottom: 0;
+	text-align: center;
+	border-top: 1px solid #eeeded;
+}
+
+.signin-page .form-or em {
+	position: relative;
+	top: -9px;
+	padding: 12px;
+	background-color: #ffffff;
+	border: 1px solid #dadada;
+	border-radius: 20px;
+}
+
+.signin-page .bottom-links {
+	text-align: center;
+	margin-top: 36px;
+}
+
+
+/* Register page */
+
+.navbar .brand-middle {
+	position: relative;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.register-page .form-or {
+	display: block;
+	margin-top: 42px;
+	margin-bottom: 0;
+	text-align: center;
+	border-top: 1px solid #eeeded;
+}
+
+.register-page .form-or em {
+	position: relative;
+	top: -9px;
+	padding: 12px;
+	background-color: #ffffff;
+	border: 1px solid #dadada;
+	border-radius: 20px;
+}
+
+.register-page .rules {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.register-page .bottom-links {
+	text-align: center;
+	margin-top: 36px;
+}
+
+.alert.alert-email {
+	margin-top: 0px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	padding-top: 6px;
+	padding-bottom: 8px;
+}
+
+.input-has-alert .input-group-addon {
+	border-bottom-left-radius: 0;
+}
+
+.input-has-alert .form-control {
+	border-bottom-left-radius: 0; 
+	border-bottom-right-radius: 0;
+}
+
+.alert-email .link {
+	text-decoration: underline;
+}
+
+
+/* Confirmation page */
+
+.confirmation-page .action-buttons {
+	margin-top: 24px;
+}
+
+.register-success .icon {
+	background-color: #00a65a;
+	width: 62px;
+	height: 62px;
+	display: inline-block;
+	margin-top: 20px;
+	border-radius: 32px;
+}
+
+.register-success .icon i {
+	color: #ffffff;
+	font-size: 46px;
+}
+
+
+/* Inquiry page */
+
+.inquiry-page .rules {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.inquiry-page .action-buttons {
+	margin-top: 6px;
+}
+
+.inquiry-success .icon {
+	background-color: #00a65a;
+	width: 62px;
+	height: 62px;
+	display: inline-block;
+	margin-top: 20px;
+	border-radius: 32px;
+}
+
+.inquiry-success .icon i {
+	color: #ffffff;
+	font-size: 46px;
+}
+
+.help-icon {
+	font-size: 14px;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+
+/* Activation page */
+
+.activation-page .action-buttons {
+	margin-top: 24px;
+}
+
+
+/* Dashboard page */
+
+.page-body .page-container .sidebar-menu .logo-env a {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.profile-info.dropdown.pull-right>a img {
+	margin-right: 6px;
+}
+
+.panel .panel-body .no-domains {
+	margin-bottom: 12px;
+}
+
+.panel .no-domains .icon {
+	font-size: 46px;
+}
+
+.panel .no-domains p {
+	margin-bottom: 16px;
+}
+
+
+/* Lists page */
+
+.panel-with-table {
+	margin-bottom: 0;
+	border-bottom-style: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.panel-with-table .panel-primary .panel-body {
+	background-color: #ffffff;
+}
+
+.panel-with-table .btn-group-label button {
+	margin-right: 8px;
+}
+
+.panel-with-table .btn-group-label .desc {
+	padding-top: 6px;
+}
+
+.action-buttons {
+	margin-bottom: 24px;
+	margin-top: 6px;
+}
+
+.status span {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 6px;
+	vertical-align: baseline;
+	border-radius: 2px;
+}
+
+.table-list .shorten {
+	text-overflow: ellipsis; 
+	overflow: hidden;
+}
+
+.status .status-info {
+	background-color: #21a9e1;
+}
+
+.status .status-success {
+	background-color: #00a651;
+}
+
+.status .status-danger {
+	background-color: #cc2424;
+}
+
+.status .status-orange {
+	background-color: #ff9600;
+}
+
+.status .status-primary {
+	background-color: #303641;
+}
+
+.status .status-default {
+	background-color: #eaebea;
+	border: 1px solid #dcdcdc;
+}
+
+.info-details .inquiry-expiration p {
+	font-size: 13px;
+	margin-bottom: 4px;
+}
+
+.info-details .inquiry-expiration a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.table-list .icon-ellipsis {
+	font-size: 14px; padding-top: 6px; padding-bottom: 4px; padding-left: 11px; padding-right: 11px;
+}
+
+.table-list .show-onhover {
+	opacity: 0;
+}
+
+.table-list tr:hover .show-onhover {
+	opacity: 1;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  color: #303641;
+  background-color: #f0f0f1;
+  border-color: #dcdddc;
+}
+
+
+/* Invoice */
+
+.invoice .invoice-right .total {
+	font-size: 15px;
+}
+
+
+/* Domain details */
+
+.domain-name {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 20px;
+}
+
+
+/* Order page */
+
+.person-select {
+	border-bottom-color: #a6e8f2;
+}
+
+.person-select li a {
+  position: relative;
+  display: block;
+  padding: 12px 20px;
+	background-color: #f0f0f1;
+	border-color: #eaebea;
+	border-bottom: 1px solid #a6e8f1;
+}
+
+.person-select li.active a {
+	border: 1px solid #a6e8f1;
+	border-bottom-color: #ffffff;
+}
+
+.agreement-sign .days-left {
+	/*background-color: rgba(0, 0, 0, 0.1);*/
+	/*width: 82px;*/
+	padding-top: 2px;
+	padding-bottom: 4px;
+	margin-right: 16px; 
+	margin-bottom: 6px; 
+	width: 100px;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 0.2);
+}
+
+.agreement-sign .days-left h3 {
+	font-size: 38px;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.agreement-sign .days-left hr {
+	margin-bottom: 0;
+	margin-top: 4px;
+	border-bottom-style: hidden;
+	border-top-style: solid;
+	border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.agreement-sign .days-left .days {
+	color: rgba(255, 255, 255, 0.85) !important;
+	font-size: 11px !important;
+}
+
+
+/* Text colors */
+
+.text-red {
+	color: #b11b1b;
+}
+
+.text-aqua {
+	color: #00c0ef;
+}
+
+.text-blue {
+	color: #0073b7;
+}
+
+.text-cyan {
+	color: #00b29e;
+}
+
+.text-orange {
+	color: #ffa812;
+}
+
+.text-green {
+	color: #00a65a;
+}
+
+
+/* Transitions */
+
+a {
+  -webkit-transition: all 150s ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150sms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.table > tbody > tr > td {
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-o-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.btn {
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-o-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}

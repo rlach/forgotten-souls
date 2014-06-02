@@ -17,11 +17,15 @@ angular.module('myApp.controllers', [])
 		game.shuffle(deck);
 	}
 	
-	$scope.getLink = function(deck) {
+	$scope.getLink = function(deck, alt) {
 		if($scope.drawPile[deck].length === 0) {
 			return 'img/blank.png';
 		} else {
-			return 'img/fs/' + deck + $scope.drawPile[deck][0] + '.png';
+			var nameToUse = deck;
+			if(alt !== undefined && typeof alt === 'string') {
+				nameToUse = alt;
+			}
+			return 'img/fs/' + nameToUse + $scope.drawPile[deck][0] + '.png';
 		}
 	}
 	

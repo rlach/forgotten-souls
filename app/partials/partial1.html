@@ -5,18 +5,134 @@
 <p>{{treasureTrack}}</p>
 </div>
 
-<div>Exploration [{{decks.exploration.length}}]:
-<button ng-click="draw('exploration')">Draw Exploration!</button>
-	<p><img src="{{getLink('exploration')}}" alt="Smiley face" height="42" width="42"></p>
+<div class="row">
+	
+	<div class="col-md-6">
+		
+		<div class="panel panel-success" data-collapsed="0">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">Exploration card <span class="badge badge-secondary">{{decks.exploration.length}}</span>
+					<button ng-click="draw('exploration')" type="button" class="btn btn-green btn-icon">
+						Draw
+						<i class="entypo-export"></i>
+					</button>
+					<button ng-click="reset()" type="button" class="btn btn-red btn-icon">
+						Restart game
+						<i class="entypo-cancel-circled"></i>
+					</button>
+				</div>
+				
+				<div class="panel-options">
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p><img src="{{getLink('exploration')}}" alt="Smiley face" height="42" width="42"></p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<div class="col-md-6">
+		
+		<div class="panel panel-warning" data-collapsed="0">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">Peril card <span class="badge badge-secondary">{{decks.peril.length}}</span>
+					<button ng-click="draw('peril')" type="button" class="btn btn-green btn-icon">
+						Draw
+						<i class="entypo-export"></i>
+					</button>
+					<button ng-click="shuffle('peril')" type="button" class="btn btn-blue btn-icon">
+						Shuffle
+						<i class="entypo-docs"></i>
+					</button>
+				</div>
+				
+				<div class="panel-options">
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p><img src="{{getLink('peril')}}" alt="Smiley face" height="42" width="42"></p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
 </div>
-<div>Monsters [{{decks.monster.length}}]:
-	<button ng-click="draw('monster')">Draw Monster!</button>
-	<button ng-click="shuffle('monster')">Shuffle Monster!</button>
-	<p><img src="{{getLink('monster')}}" alt="Smiley face" height="42" width="42"></p>
+
+<div class="row">
+	<div class="col-md-12">
+	
+		<div class="panel panel-danger panel-shadow" data-collapsed="0"><!-- to apply shadow add class "panel-shadow" -->
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">Monster card <span class="badge badge-secondary">{{decks.monster.length}}</span>
+					<button ng-click="draw('monster')" type="button" class="btn btn-green btn-icon">
+						Draw
+						<i class="entypo-export"></i>
+					</button>
+					<button ng-click="shuffle('monster')" type="button" class="btn btn-blue btn-icon">
+						Shuffle
+						<i class="entypo-docs"></i>
+					</button>
+				</div>
+				
+				<div class="panel-options">
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p><img src="{{getLink('monster')}}" alt="Smiley face" height="42" width="42"></p>
+				
+			</div>
+			
+		</div>
+	
+	</div>
 </div>
-<div>Peril [{{decks.peril.length}}]:
-	<button ng-click="draw('peril')">Draw Peril!</button>
-	<button ng-click="shuffle('peril')">Shuffle Peril!</button>
-	<p><img src="{{getLink('peril')}}" alt="Smiley face" height="42" width="42"></p>
+
+<div class="row">
+	<div class="col-md-12">
+	
+		<div class="panel panel-default panel-shadow" data-collapsed="0"><!-- to apply shadow add class "panel-shadow" -->
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">Explored room setup guide</div>
+				
+				<div class="panel-options">
+					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
+				</div>
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p><img src="{{getLink('exploration', 'setup')}}" alt="Smiley face" height="42" width="42"></p>
+				
+			</div>
+			
+		</div>
+	
+	</div>
 </div>
-<button ng-click="reset()">Reset!</button>
