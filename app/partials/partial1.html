@@ -7,7 +7,7 @@
 
 <div class="row">
 	
-	<div class="col-md-6">
+	<div class="col-md-3">
 		
 		<div class="panel panel-success" data-collapsed="0">
 			
@@ -19,20 +19,16 @@
 						<i class="entypo-export"></i>
 					</button>
 					<button ng-click="reset()" type="button" class="btn btn-red btn-icon">
-						Restart game
+						Restart
 						<i class="entypo-cancel-circled"></i>
 					</button>
-				</div>
-				
-				<div class="panel-options">
-					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
 				</div>
 			</div>
 			
 			<!-- panel body -->
 			<div class="panel-body">
 				
-				<p><img src="{{getLink('exploration')}}" alt="Smiley face" height="42" width="42"></p>
+				<p><img src="{{getLink('exploration')}}" alt="Smiley face" width="100%"></p>
 				
 			</div>
 			
@@ -41,42 +37,6 @@
 	</div>
 	
 	<div class="col-md-6">
-		
-		<div class="panel panel-warning" data-collapsed="0">
-			
-			<!-- panel head -->
-			<div class="panel-heading">
-				<div class="panel-title">Peril card <span class="badge badge-secondary">{{decks.peril.length}}</span>
-					<button ng-click="draw('peril')" type="button" class="btn btn-green btn-icon">
-						Draw
-						<i class="entypo-export"></i>
-					</button>
-					<button ng-click="shuffle('peril')" type="button" class="btn btn-blue btn-icon">
-						Shuffle
-						<i class="entypo-docs"></i>
-					</button>
-				</div>
-				
-				<div class="panel-options">
-					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
-				</div>
-			</div>
-			
-			<!-- panel body -->
-			<div class="panel-body">
-				
-				<p><img src="{{getLink('peril')}}" alt="Smiley face" height="42" width="42"></p>
-				
-			</div>
-			
-		</div>
-		
-	</div>
-	
-</div>
-
-<div class="row">
-	<div class="col-md-12">
 	
 		<div class="panel panel-danger panel-shadow" data-collapsed="0"><!-- to apply shadow add class "panel-shadow" -->
 			
@@ -93,21 +53,49 @@
 					</button>
 				</div>
 				
-				<div class="panel-options">
-					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
-				</div>
 			</div>
 			
 			<!-- panel body -->
 			<div class="panel-body">
 				
-				<p><img src="{{getLink('monster')}}" alt="Smiley face" height="42" width="42"></p>
+				<p><img src="{{getLink('monster')}}" alt="Smiley face" width="100%"></p>
 				
 			</div>
 			
 		</div>
 	
 	</div>
+	
+	<div class="col-md-3">
+		
+		<div class="panel panel-warning" data-collapsed="0">
+			
+			<!-- panel head -->
+			<div class="panel-heading">
+				<div class="panel-title">Peril card <span class="badge badge-secondary">{{decks.peril.length}}</span>
+					<button ng-click="draw('peril')" type="button" class="btn btn-green btn-icon">
+						Draw
+						<i class="entypo-export"></i>
+					</button>
+					<button ng-click="shuffle('peril')" type="button" class="btn btn-blue btn-icon">
+						Shuffle
+						<i class="entypo-docs"></i>
+					</button>
+				</div>
+				
+			</div>
+			
+			<!-- panel body -->
+			<div class="panel-body">
+				
+				<p><img src="{{getLink('peril')}}" alt="Smiley face" width="100%"></p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
 </div>
 
 <div class="row">
@@ -118,17 +106,12 @@
 			<!-- panel head -->
 			<div class="panel-heading">
 				<div class="panel-title">Explored room setup guide</div>
-				
-				<div class="panel-options">
-					<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
-					<a href="#" data-rel="close"><i class="entypo-cancel"></i></a>
-				</div>
 			</div>
 			
 			<!-- panel body -->
 			<div class="panel-body">
 				
-				<p><img src="{{getLink('exploration', 'setup')}}" alt="Smiley face" height="42" width="42"></p>
+				<p><img src="{{getLink('exploration', 'setup')}}" alt="Smiley face" width="100%"></p>
 				
 			</div>
 			

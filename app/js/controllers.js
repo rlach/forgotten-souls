@@ -18,13 +18,13 @@ angular.module('myApp.controllers', [])
 	}
 	
 	$scope.getLink = function(deck, alt) {
-		if($scope.drawPile[deck].length === 0) {
-			return 'img/blank.png';
-		} else {
-			var nameToUse = deck;
+		var nameToUse = deck;
 			if(alt !== undefined && typeof alt === 'string') {
 				nameToUse = alt;
-			}
+		}
+		if($scope.drawPile[deck].length === 0) {
+			return 'img/fs/' + nameToUse + '00.png';
+		} else {
 			return 'img/fs/' + nameToUse + $scope.drawPile[deck][0] + '.png';
 		}
 	}
