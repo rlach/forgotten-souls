@@ -1,4 +1,22 @@
+<div ng-if="debug">
 <p>This is the partial for view 1.</p>
 <p>{{decks}}</p>
+<p>{{drawPile}}</p>
 <p>{{treasureTrack}}</p>
+</div>
+
+<div>Exploration [{{decks.exploration.length}}]:
+<button ng-click="draw('exploration')">Draw Exploration!</button>
+	<p><img src="{{getLink('exploration')}}" alt="Smiley face" height="42" width="42"></p>
+</div>
+<div>Monsters [{{decks.monster.length}}]:
+	<button ng-click="draw('monster')">Draw Monster!</button>
+	<button ng-click="shuffle('monster')">Shuffle Monster!</button>
+	<p><img src="{{getLink('monster')}}" alt="Smiley face" height="42" width="42"></p>
+</div>
+<div>Peril [{{decks.peril.length}}]:
+	<button ng-click="draw('peril')">Draw Peril!</button>
+	<button ng-click="shuffle('peril')">Shuffle Peril!</button>
+	<p><img src="{{getLink('peril')}}" alt="Smiley face" height="42" width="42"></p>
+</div>
 <button ng-click="reset()">Reset!</button>
